@@ -5,13 +5,13 @@ class Coffee:
         self.size = size
         self.price = price
 
-    size = input("Enter the Size You Want")
-    price = int(input("Enter the Price Required"))
+    size = input("Enter the Size You Want: ")
+    price = int(input("Enter the Price Required: "))
 
-    if  not size ["small","large","medium"]:
+    if  not size in ("small","large","medium"):
         print("size must be Small, Medium, or Large")
 
     def tip(self):
-         print ("This coffee is great, here's a tip")
-         self.price+=1
+         print ("This coffee is great, here's a tip!\n")
+         self.price += 1
         

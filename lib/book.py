@@ -4,6 +4,8 @@ class Book:
         self.title = title
         self.page_count = page_count
 
+        
+        
         if self.title == "":
             print ("Enter Title")
         else:
